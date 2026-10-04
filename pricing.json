@@ -1,0 +1,1 @@
+{"plans":[{"name":"Free","overage":null,"price_monthly_usd":0,"quota":"100 queries/day"},{"name":"Pro","overage":null,"price_monthly_usd":5,"quota":"unlimited"}],"x402":{"applies_to":["is_holiday","holidays_in_year","add_business_days","next_business_day"],"enabled":true,"price_usdc_per_call":0.005}}

@@ -1,0 +1,33 @@
+version: 1
+runtime: typescript
+entry: src/index.ts
+
+build:
+  install: npm ci
+  command: npm run build
+
+startCommand:
+  type: http
+  command: node dist/index.js
+
+configSchema:
+  source: code
+
+pricing:
+  protocol: x402
+  network: base-sepolia  # test first, flip to 'base' for production
+  recipient: "0x62c6da49028953919a4bd35d3092ac9277DA0a7D"
+  asset: usdc
+  tools:
+    - name: is_holiday
+      price: "0.005"
+      description: "Check whether a date is a statutory holiday in a Canadian jurisdiction (federal or province/territory). Handles weekend observance (shifted …"
+    - name: holidays_in_year
+      price: "0.005"
+      description: "List all holidays (statutory plus commonly-observed optional entries, each flagged by kind) for a Canadian jurisdiction in 2026 or 2027."
+    - name: add_business_days
+      price: "0.005"
+      description: "Add (or subtract, with negative n) business days to a date, skipping weekends and statutory holidays in the given Canadian jurisdiction."
+    - name: next_business_day
+      price: "0.005"
+      description: "Find the next business day after a date in a Canadian jurisdiction, skipping weekends and statutory holidays."
