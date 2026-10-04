@@ -20,14 +20,14 @@ pricing:
   asset: usdc
   tools:
     - name: is_holiday
-      price: "0.005"
+      price: "0.01"
       description: "Check whether a date is a statutory holiday in a Canadian jurisdiction (federal or province/territory). Handles weekend observance (shifted …"
     - name: holidays_in_year
-      price: "0.005"
+      price: "0.01"
       description: "List all holidays (statutory plus commonly-observed optional entries, each flagged by kind) for a Canadian jurisdiction in 2026 or 2027."
     - name: add_business_days
-      price: "0.005"
+      price: "0.01"
       description: "Add (or subtract, with negative n) business days to a date, skipping weekends and statutory holidays in the given Canadian jurisdiction."
     - name: next_business_day
-      price: "0.005"
+      price: "0.01"
       description: "Find the next business day after a date in a Canadian jurisdiction, skipping weekends and statutory holidays."
